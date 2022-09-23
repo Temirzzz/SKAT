@@ -1,0 +1,32 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-top: 40px;
+  }
+
+  &__error,
+  &__succsess {
+    position: absolute;
+    font-size: 24px;
+    color: #ed4a4a;
+    bottom: -35px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      bottom: -25px;
+    }
+  }
+}
